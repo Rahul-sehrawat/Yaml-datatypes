@@ -40,3 +40,7 @@ not a num: .nan
 surname: !!null Null # or null NULL ~
 ~: this is a null key
 
+# dates and time
+date: !!timestamp 2002-12-14
+india time: 2001-12-15T02:59:43.10 +5:30
+no time zone: 2001-12-15T02:59:43.10
