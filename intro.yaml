@@ -1,0 +1,18 @@
+"anime" : "I love anime"
+9: "this is Rahul's fav number"
+---
+# lists 
+- apple
+- pizza
+- burger
+- icecream
+---
+cities:
+ - new delhi
+ - london
+ - paris
+---
+cities: [new delhi, london]
+---
+{mango: "yellow fruit", age: 16} 
+...
