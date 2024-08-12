@@ -54,3 +54,39 @@ names: !!set
  ? Rahul
  ? Rue
  ? Luffy
+
+# dictionary !!omap
+people: !!omap
+  - Rahul:
+     name: Rahul Sehrawat
+     age: 24
+     height: 200
+  - Rue:
+     name: Rue
+     age: 150
+     height: 1456
+
+# reusing some properties using anchors
+likings: &likes
+  fav food: pizza
+  dislikes: cricket
+
+person1:
+  name: Rahul Sehrawat
+  <<: *likes
+
+person2:
+  name: Rue
+  <<: *likes
+  dislikes: berries
+
+# this will look like
+person2:
+  name: Rue
+  fav food: momos
+  dislikes: football
+
+person3:
+  name: luffy
+  fav food: meat
+  dislikes: blackbeard
